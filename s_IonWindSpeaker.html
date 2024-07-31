@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<!--
+		Author: Nathan Scott
+		Start Date: 4/8/2023
+		End Date: N/A
+		
+	-->
+	<meta charset="utf-8" />
+	<title>Ion Wind Speaker</title>
+	<link href="css/s_Base.css" rel="stylesheet" />
+	<link href="css/spk.css" rel="stylesheet" />
+	<script src="headerFooter.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+	<article>
+	<center id="prodH"><h1><b><cite>Ion Wind Speaker</b></cite></h1></center>
+		<div class="rectangle" id="r1">
+			<div class="square">
+				<div class="subSq">
+					<div class="tagline">
+						From God's lips to your ears! </br></br></br>
+						Enter a new world of ultra-authentic sound. </br></br></br>
+						Discover outstanding clarity and detail.
+					</div>
+				</div>
+			</div>
+			<div class="square">
+			<img src="imgs/plasmaspkMusic.png" 
+			alt="Ion Wind Speaker" />
+			<h3>ARTIST'S CONCEPTION</h3>
+			</div>
+		</div>
+		<div class="rectangle" id="r2">
+			<div id="text">
+			<center><h1><cite>Just Pure Sound</cite></h1></center>
+			<p><cite>Our ion wind loudspeakers generate sound without using any moving parts. </br></br>
+
+			They ionize the air by applying high voltage, and use our patented ionization 
+			control technique to convert electrical sound signals directly to audible sound. </br></br>
+
+			Not burdened by a moving mass, they excel in impulse response, transient response 
+			and expressiveness, and are able to faithfully reproduce every subtlety and nuance 
+			of a music album, a movie soundtrack, a concert hall performance, a live stadium show 
+			or an intimate poetry recital. Whether it is the rustle of falling leaves or the energy 
+			of soaring guitar riffs, you miss nothing and hear everything, at high or low volume.</cite>
+			</p>
+			</div>
+		</div>
+		<div class="rectangle" id="r3">
+						<div class="faqq">
+		<b><center class="FAQhead">Loudspeaker F A Q</center>
+	
+			<center class="FAQ">
+			<div class="menu-trigger">What is ideal sound reproduction?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			<center class="FAQ">
+			<div class="menu-trigger">How do conventional speakers work?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			<center class="FAQ">
+			<div class="menu-trigger">What are the disadvantages of
+			conventional speakers? </div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			</b>
+			</div>
+		</div>
+		<div class="rectangle" id="r4">
+			<a href="Presentation.pdf" target="_blank">
+			<div id="pdf">
+			<img src="imgs/PDF.png" alt="PDF" id="PDF" />
+			<center><p>Ionic Sound: A new approach to Ion Wind Speakers</p></center>		
+			</div>
+			</a>
+		</div>
+</article>
+
+	<footer id="footer"></footer>
+	<!-- CREATED USING CHATGPT -->
+	<script>
+	// drop down menu
+        document.addEventListener("DOMContentLoaded", function() {
+      var menuTriggers = document.querySelectorAll(".menu-trigger");
+      var menus = document.querySelectorAll(".menu");
+
+      menuTriggers.forEach(function(trigger, index) {
+        trigger.addEventListener("click", function() {
+          menus[index].style.display = (menus[index].style.display === "block") ? "none" : "block";
+        });
+      });
+
+      document.addEventListener("click", function(event) {
+        menuTriggers.forEach(function(trigger, index) {
+          if (!menus[index].contains(event.target) && !trigger.contains(event.target)) {
+            menus[index].style.display = "none";
+          }
+        });
+      });
+    });
+	</script>
+	
+	<!-- CREATED USING CHATGPT -->
+	<script>
+    // Retrieve the header and footer content from local storage
+    var headerContent = getHeaderContent();
+    var footerContent = getFooterContent();
+
+    // Set the header and footer content in the designated placeholders
+    document.getElementById('header').innerHTML = headerContent;
+    document.getElementById('footer').innerHTML = footerContent;
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "utf-8";
+@font-face {
+	font-family: Eras Bold ITC;
+	src: url(ERASBD.ttf) format('truetype');
+}
+
+div.const {
+	background-color: #004b85;
+	padding: 10px;
+	margin: 10px 100px;;
+}
+
+div p {
+	color: white;
+	font-family: "Eras Demi ITC";
+	font-size: 30pt; 
+	padding-left: 25px;
+}

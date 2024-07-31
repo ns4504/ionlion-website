@@ -1,0 +1,198 @@
+@charset "utf-8";
+@font-face {
+	font-family: Tahoma;
+	src: url(tahoma.ttf) format('truetype');
+	font-family: Malgun Gothic;
+	src: url(malgun.ttf) format('truetype');
+}
+
+header {
+	border-bottom: none;
+}
+
+.rectangle {
+  height: 450px;
+  background-color: #1d66ba;
+  position: relative;
+}
+
+/* first section */
+#r1 {
+  background-color: #0168b5;
+  display: flex;
+  font-family: Tahoma;
+  height: 375px;
+}
+
+#r1 .square {
+	flex-basis: 50%;
+	background-color: #004b85;
+}
+
+article center#prodH h1 {
+	font-family: "Eras Demi ITC";
+	background-color: #004b85;
+	color: white;
+	font-size: 30pt;
+	margin-bottom: 0px;
+	padding-top: 25px;
+	margin-top: 0px;
+}
+
+article center#ionAgeH h1 {
+	margin: 0px;
+	padding: 25px;
+}
+
+#r1 .square img {
+	width: 470px;
+	height: 330.312px;
+	padding-top: 25px;
+	margin-right: 25px;
+}
+
+#r1 .square > h3 {
+  position: absolute;
+  bottom: 1%;
+  left: 61%;
+  transform: translate(-50%, -20%);
+  color: #c9bc37;
+  z-index: 1;
+  font-size: 16px;
+}
+
+#r1 .subSq {	
+	background-color: #418bca;	
+	z-index: 1;
+	margin-left: 25px;
+	color: white;
+	font-size: 24px;
+	text-align: justify;	
+	padding-left: 15px;
+	width: 400px;
+	margin-top: 20px;
+}
+
+#r1 .tagline {
+	font-size: 18pt;
+	padding: 35px;
+	margin-top: 25px;
+}
+
+/* second section */
+#r2 {
+	padding-top: 30px;
+	height: 375px;
+	font-family: Tahoma;
+	
+}
+
+#r2 #text {
+	border: 2px solid black; 
+	padding: 10px;
+	padding-top: 0px;
+	background-color: white;
+	width: 80%;
+	margin-left: 10%;
+}
+
+#r2 #text cite {
+	font-size: 20px;
+}
+
+#r2 #text p {
+	font-size: 14px;
+}
+
+
+/* third section */
+#r3 {
+	max-height: 350px;
+	font-family: "Malgun Gothic";
+}
+
+#r3 center.FAQhead{
+	color: white;
+	padding-top: 1.5em;
+	padding-bottom: 20px;
+	font-size: 18pt;
+	border-bottom: solid 1px white;
+	max-width: 80%;
+	margin-left: 10%;		
+}
+
+#r3 div.faqq {
+
+}
+
+#r3 center.FAQ {
+	font-size: 16pt;
+	color: white;
+	border-bottom: solid 1px white;
+	max-width: 80%;
+	margin-left: 10%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #418bca;
+}
+
+#r3 center .ans {
+	color: black;
+}
+
+#r3 .menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    background-color: #e2e2e2;
+}
+	
+#r3 .menu li {
+    padding: 10px;
+}
+
+#r3 .menu-trigger {
+    cursor: pointer;
+}
+/*fourth section */
+
+#r4 {
+	padding-top: 30px;
+	max-height: 250px;
+	background-color: #dce6f0;
+}
+
+#r4 #pdf {
+	border: 5px solid white; 
+	padding: 10px;
+	background-color: #e1e1e1;
+	width: 80%;
+	text-align: justify;
+	margin-left: 10%;
+}
+
+#r4 #pdf p {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	font-size: 18pt;
+	color: #009900;
+}
+
+#r4 #pdf p#puc {
+	color: #666666;
+}
+
+/* all */
+#r1, #r2, #r3 {
+	background-color: #004b85;
+	margin: 25px 10px 25px 10px;
+}
+
+#r1 {
+	margin-top: 0px;
+}
+
+#prodH {
+	margin: 25px 10px 0px 10px;
+}

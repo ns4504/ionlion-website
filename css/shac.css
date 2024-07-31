@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#r2 {
+	height: 525px;
+}
+
+#r1 .subSq {
+	margin-top: 25px;
+	padding: 1px;
+	width: 400px;
+	height: 328px;
+}
+
+#r3 {
+	max-height: 375px;
+}

@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+
+article {
+  width: 940px;
+  margin: 10px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  width: 450px;
+}
+
+body {
+	background-size: 961px 1303.75px;
+}
+
+#busHead, #techHead {
+	width: 250px;
+	height: auto;
+	margin: 5px;
+	padding: 5px;
+}
+
+#ions, #tulips {
+	width: 425px;	
+	height: 353px;
+}
+
+#box2 {
+	position: relative;
+	margin-top: 15px;
+}
+
+#box3 {
+	position: relative;
+	margin-top: 17px;
+}
+.text-block1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  color: #00548c;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 280px;
+}
+
+.text-block1 h1#insp {
+	color: #179bd2;
+}
+
+.text-block1 > h3 {
+	color: #666666;
+	max-width: 275px;
+	font-size: 11pt;
+}
+
+.text-block1 b {
+	color: #49b1d3;
+}
+
+.text-block2 {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  background-color: #004b85;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 275px;
+  
+}
+
+.text-block1 p cite {
+	color: black;
+}
+
+figcaption {
+	font-weight: bold;
+	font-size: 24px;
+	background-color: #205391;
+	padding: 5px;
+	color: white;
+}
+
+figure {
+  text-align: center;
+  float: left;
+}
+
+figure p {
+	text-align: justify;
+	height: auto;
+	border: 1px solid black;
+	background-color: #61aedd;
+	padding: 5px;
+	margin: 0px;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<!--
+		Author: Nathan Scott
+		Start Date: 4/8/2023
+		End Date: N/A
+		
+	-->
+	<meta charset="utf-8" />
+	<title>Ionic Heating & Cooling</title>
+	<link href="css/s_Base.css" rel="stylesheet" />
+	<link href="css/spk.css" rel="stylesheet" />
+	<link href="css/cpj.css" rel="stylesheet" />
+	<link href="css/shac.css" rel="stylesheet" />
+	<script src="headerFooter.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+	<article>
+	<center id="prodH"><h1><b><cite>Space Heating & Cooling</b></cite></h1></center>
+		<div class="rectangle" id="r1">
+			<div class="square">
+				<div class="subSq">
+					<div class="tagline">Go continuously from hot to cool.</br></br>
+					One knob, one control.</br>
+					No changeover required between heating and cooling.</br></br>
+					Simple, efficient, eco-friendly.</div>
+				</div>
+			</div>
+			<div class="square">
+			<img src="imgs/shac.jpg" alt="art2" />
+			<h3>ARTIST'S CONCEPTION</h3>
+			</div>
+		</div>
+		<div class="rectangle" id="r2">
+			<div id="text">
+			<center><h1><cite>Leave it to the ions</cite></h1></center>
+			<p><cite>We have developed air heating and cooling techniques
+			in our laboratories that have the potential to deliver
+			unique space heating and cooling solutions to diverse markets.  </br></br>
+
+			Our systems deliver hot and cool air flows directly out of the 
+			electrodes - no refrigerant, compressor, resistive heating element 
+			or heat exchanger required. And, of course, no moving parts. 
+			You can go continuously from hot to cool (or the other way) simply 
+			by turning one knob; the response to a change in setting is instantaneous. </br></br>
+
+			We have embarked on a mission of scaling our techniques to provide simple, 
+			lightweight, efficient, low-cost, low-maintenance, eco-friendly heating/cooling 
+			products: hot boxes, coolers, incubators, laboratory equipment, refrigerators etc. </br></br>
+			
+			Our long term vision is to deliver temperature control systems for cars, homes 
+			and buildings, replacing conventional hvac systems that are bulky, inefficient, 
+			high-cost, high-maintenance and ecologically damaging. </br></br>
+</cite>
+			</p>
+			</div>
+		</div>
+		<div class="rectangle" id="r3">
+		<b><center class="FAQhead">Frequently Asked Questions</center>
+			<center class="FAQ">
+			<div class="menu-trigger">How do conventional cooling systems work?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			<center class="FAQ">
+			<div class="menu-trigger">How do conventional heating systems work?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			<center class="FAQ">
+			<div class="menu-trigger">What are the disadvantages of </br> 
+			conventional heating and cooling systems?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			</b>
+		</div>
+		<div class="rectangle" id="r4">
+			<a href="dummyFile.pdf" target="_blank">
+			<div id="pdf">
+			<img src="imgs/PDF.png" alt="PDF" id="PDF" />
+			<center><p id="puc">PRESENTATION UNDER CONSTRUCTION</p></center>		
+			</div>
+			</a>
+		</div>
+</article>
+
+	<footer id="footer"></footer>
+	<!-- CREATED USING CHATGPT -->
+	<script>
+	// drop down menu
+        document.addEventListener("DOMContentLoaded", function() {
+      var menuTriggers = document.querySelectorAll(".menu-trigger");
+      var menus = document.querySelectorAll(".menu");
+
+      menuTriggers.forEach(function(trigger, index) {
+        trigger.addEventListener("click", function() {
+          menus[index].style.display = (menus[index].style.display === "block") ? "none" : "block";
+        });
+      });
+
+      document.addEventListener("click", function(event) {
+        menuTriggers.forEach(function(trigger, index) {
+          if (!menus[index].contains(event.target) && !trigger.contains(event.target)) {
+            menus[index].style.display = "none";
+          }
+        });
+      });
+    });
+	</script>
+	
+	<!-- CREATED USING CHATGPT -->
+	<script>
+    // Retrieve the header and footer content from local storage
+    var headerContent = getHeaderContent();
+    var footerContent = getFooterContent();
+
+    // Set the header and footer content in the designated placeholders
+    document.getElementById('header').innerHTML = headerContent;
+    document.getElementById('footer').innerHTML = footerContent;
+  </script>
+</body>
+</html>

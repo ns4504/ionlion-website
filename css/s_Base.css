@@ -1,0 +1,274 @@
+@charset "utf-8";
+@font-face {
+	font-family: Eras Bold ITC;
+	src: url(ERASBD.ttf) format('truetype');
+	font-family: Eras Demi ITC;
+	src: url(ERASDEMI.ttf) format('truetype');
+}
+/* HTML Base */
+html {
+	background-color: #1f1f1f;
+}
+
+body { 
+	background-color: #1d66ba; 
+   	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+	width: 95%;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	border: solid 3mm #dce6f0;
+}
+
+/* Header */
+header {
+	max-width: 100%;
+	min-width: 100%;
+	border-bottom: none;
+	background-color: #418bca;
+}
+
+header:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+ div.nameLogo img#header {
+	 width: 960px;
+	 height: 311px;
+}
+
+p#nametag {
+	max-width: 768px;
+	font-size: 24pt;
+	color: white;
+	float: right;
+	margin-right: 200px;
+	font-family: "Eras Demi ITC";
+	line-height: 50px;
+	padding-top: 25px;
+}
+
+p#nametag b {
+	font-size: 72pt;
+}
+
+p#nametag u {
+	font-size: 46pt;
+}
+
+p#nametag u, p#nametag b {
+	font-family: "Eras Bold ITC";
+}
+
+/* Navigation */
+header ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header ul li a {
+	text-decoration: none;
+	color: #00548c;
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+	float: left;
+	padding: 20px 15px 0px 10px;
+} 
+
+header nav ul li a:hover {
+	text-decoration: underline;
+}
+
+header nav {
+	background-color: #014a84;
+}
+ 
+/* Search Bar */
+header input[type=text] {
+	padding: 1px;
+	font-size: 16px;	
+	margin-top: 20px;
+	margin-right: 10px;
+	background-image: url("../imgs/search.png");
+	background-size: 19px 19px;
+	background-repeat: no-repeat;
+	background-position: 95% 100%;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+/* About stuff & Article Header*/
+article div.about {
+	border-radius: 25px;
+	display: inline-block;	
+	border-style: solid;
+	border-color: #00548c;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 10px;
+	margin-right: 10px;
+	background-color: #FFFFFF;	
+	padding: 5px 25px 5px 25px;
+	text-align: center;
+}
+
+article div img{	
+	width: 14em;
+	height: 10em;
+}
+
+article div#ionAge {
+	font-family: "Eras Demi ITC";
+	background-color: #004b85;
+	color: white;
+	display: flex;
+	font-size: 16pt;
+}
+
+article center#ionAgeH {
+	font-family: "Eras Demi ITC";
+	background-color: #004b85;
+	color: white;
+	font-size: 38pt;
+        padding: 25px;
+}
+
+#ionAge, #ionAgeH {
+	padding-left: 5px;
+}
+
+
+article center#ionAgeH h1 {
+	margin: 0px;
+	padding: 25px;
+}
+
+article div#ionAge div#halfA {
+	width: 65%;
+}
+
+article div#ionAge div#halfB {
+	width: 35%;
+}
+
+article div.text {
+	background-color: #418bca;
+	margin-left: 25px;
+	margin-bottom: 50px;
+	padding: 0px 25px 0px 25px;
+	max-width: 50%;
+}
+
+article div.ions img{
+	width: 350px;
+	height: 290px;
+	margin-left: 20px;
+}
+
+div.prod {
+	margin: 25px 10px;
+	background-color: #004b85;
+        padding-left: 16px;
+}
+
+div.mainIon{
+	margin: 25px 10px;
+}
+/* misc */
+#active {
+	color: #009900;
+}
+
+#inactive {
+	color: #666666;
+}
+
+/*footer */
+body > footer {
+   color: #FFFFFF;
+}
+
+body > footer h1 {
+   font-weight: bold;
+   margin-bottom: 5px;
+}
+
+footer {
+	background-color: #00548c;
+}
+
+footer > nav.verticalNavigation {
+	float: left; 
+}
+
+footer::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+footer > nav.verticalNavigation ul  {
+	list-style-type: none;
+	font-size: 12pt;
+}
+
+footer a {
+	color: #FFFFFF;
+}
+
+footer nav h1 {
+	font-size: 36px;
+}
+
+footer ul.desc a {
+	text-decoration: none;
+}
+
+footer div.desc a:hover {
+	text-decoration: underline;
+}
+
+footer div.nam {
+	line-height: 1em;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+footer div.desc > h2 {
+	margin-top: 20px;
+	margin-bottom: 5px;
+}
+
+footer nav#middle {
+	line-height: 1.5em;
+}
+
+footer img {
+	width: 50px;
+	height: auto;
+	float: left;
+}
+div.copyright {
+	margin-top: 1px;
+	max-width: 264px;
+}
+
+footer img#logo {
+	width: 150px;
+	height: auto;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+footer div#creditA {
+	position: absolute;
+	bottom: -400px;
+	left: 225px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<!--
+		Author: Nathan Scott
+		Start Date: 4/8/2023
+		End Date: N/A
+		
+	-->
+	<meta charset="utf-8" />
+	<title>ionLion About</title>
+	<link href="css/s_Base.css" rel="stylesheet" />
+	<link href="css/About.css" rel="stylesheet" />
+	<script src="headerFooter.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+	<article>
+			<div class="box" id="box1">
+				<figure>
+					<figcaption id="top">OUR BUSINESS HEAD</figcaption>
+						<img src="imgs/businessHead.png" id="busHead" alt="busHead"/>
+					<figcaption id="bot">SANDEEP KUMAR</figcaption>
+					<br/>
+					<p>
+					Professor, Civil and Environmental Engineering. </br>
+					Old Dominion University, Norfolk, Virginia, USA</br></br>
+					Ph.D. Chemical Engg. </br>
+					NSF CAREER awardee, Fulbright Scholar </br></br>
+					Four awarded U.S. patents</br></br>
+					More than 25 years of experience in industry, R&D and
+					academic research. Worked on research projects funded
+					by industry / federal agencies including NSF, DOE, USDA, EPA.
+					</p>
+				</figure>
+			</div>
+			<div class="box" id="box3">
+				<img id="ions" src="00.png" alt= "Ion Flow" />
+				<div class="text-block1">
+				<h1 id="vis">Our Vision: </br>
+				Advancing the <b>Ion Age</b></h1>
+				<h3>Imagination. Innovation. Ingenuity. <cite>Ions.</cite></h3>
+				<h1 id="insp">Our Inspiration:</br>A Better Tomorrow</h1>
+				<p><cite>"The answers are blowing in the ion wind."</cite></p>
+				</div>
+			</div>
+			<div class="box" id="box1">
+				<figure>
+				<figcaption id="top">OUR TECHNOLOGY HEAD</figcaption>
+					<img src="imgs/techHead.png" id="techHead" alt="techHead"/>
+				<figcaption id="bot">SAI DESARAJU</figcaption>
+				<br/>
+					<p>
+					Bachelor's Electrical Engg. & Master's Computer Science</br></br>
+					Two awarded U.S. patents in the field of Ion Wind Generators</br></br>
+					More than 25 years experience in the electric power industry,
+					IT management and academic teaching.
+
+					</p>
+				</figure>
+			</div>
+			<div class="box" id="box2">
+				<img src="imgs/tulips.png" id="tulips" alt="tulips"/>
+				<div class="text-block2">
+				<h1>What Charges Us</h1>
+				<p>We care abut the environment, our employees and the
+				communities where we work and live. We work every day
+				to exhibit safe, stable and reliable operations, while 
+				delivering long-term value to our shareholders.</p>
+				</div>
+			</div>
+	</article>
+	
+	<footer id="footer"></footer>
+	
+	<!-- CREATED USING CHATGPT -->
+	<script>
+    // Retrieve the header and footer content from local storage
+    var headerContent = getHeaderContent();
+    var footerContent = getFooterContent();
+
+    // Set the header and footer content in the designated placeholders
+    document.getElementById('header').innerHTML = headerContent;
+    document.getElementById('footer').innerHTML = footerContent;
+  </script>
+</body>
+</html>

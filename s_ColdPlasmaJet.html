@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<!--
+		Author: Nathan Scott
+		Start Date: 4/8/2023
+		End Date: N/A
+		
+	-->
+	<meta charset="utf-8" />
+	<title>Ion Cold Plasma Jet</title>
+	<link href="css/s_Base.css" rel="stylesheet" />
+	<link href="css/spk.css" rel="stylesheet" />
+	<link href="css/cpj.css" rel="stylesheet" />
+	<script src="headerFooter.js"></script>
+</head>
+
+<body>
+	<header id="header"></header>
+	<article>
+	<center id="prodH"><h1><b><cite>Cold Plasma Jet</b></cite></h1></center>
+		<div class="rectangle" id="r1">
+			<div class="square">
+				<div class="subSq">
+					<div class="tagline">
+					Long jets straight out of the electrode. </br></br>
+					No inert gas, portable, simple to use.</br></br>
+					Easily create scanning arrays for covering large areas.
+					</div>
+				</div>
+			</div>
+			<div class="square">
+			<img src="imgs/cpj.jpg" 
+			alt="CAPPjet" />
+			<h3>ARTIST'S CONCEPTION</h3>
+			</div>
+		</div>
+		<div class="rectangle" id="r2">
+			<div id="text">
+			<center><h1><cite>Long jets - without any inert gas</cite></h1></center>
+			<p><cite>We have built a cold plasma jet device that produces 20 mm long plasma jets in the air, using only electrodes:
+				no helium or other inert gas required!</br></br>
+
+				Our portable version has a main unit that can be clipped to the waist. An armored, 
+				flexible cable connects to the hand held unit giving ample freedom of movement.
+				Ideal for clinics and hospitals that use CAPPjets for cosmetic treatment and disinfection. </br></br>
+
+				Our array version produces multiple jets and can be connected to a scanning arm to cover
+				large areas. Ideal for disinfecting or cleaning / treating large surfaces. </cite>
+			</p>
+			</div>
+		</div>
+		<div class="rectangle" id="r3">
+		<b><center class="FAQhead">CAPPjet F A Q</center>
+			<center class="FAQ">
+			<div class="menu-trigger">What is a Cold Atmospheric Pressure Plasma Jet?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			<center class="FAQ">
+			<div class="menu-trigger">How do conventional CAPPjet devices work?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			<center class="FAQ">
+			<div class="menu-trigger">What are the disadvantages of conventional CAPPjet devices?</div>
+			<ul class="menu">
+				<li class="ans">Under Construction</li>
+			</ul>
+			</center>
+			</b>
+		</div>
+		<div class="rectangle" id="r4">
+			<a href="dummyFile.pdf" target="_blank">
+			<div id="pdf">
+			<img src="imgs/PDF.png" alt="PDF" id="PDF" />
+			<center><p id="puc">PRESENTATION UNDER CONSTRUCTION</p></center>		
+			</div>
+			</a>
+		</div>
+</article>
+
+	<footer id="footer"></footer>
+	<!-- CREATED USING CHATGPT -->
+	<script>
+	// drop down menu
+        document.addEventListener("DOMContentLoaded", function() {
+      var menuTriggers = document.querySelectorAll(".menu-trigger");
+      var menus = document.querySelectorAll(".menu");
+
+      menuTriggers.forEach(function(trigger, index) {
+        trigger.addEventListener("click", function() {
+          menus[index].style.display = (menus[index].style.display === "block") ? "none" : "block";
+        });
+      });
+
+      document.addEventListener("click", function(event) {
+        menuTriggers.forEach(function(trigger, index) {
+          if (!menus[index].contains(event.target) && !trigger.contains(event.target)) {
+            menus[index].style.display = "none";
+          }
+        });
+      });
+    });
+	</script>
+	
+	<!-- CREATED USING CHATGPT -->
+	<script>
+    // Retrieve the header and footer content from local storage
+    var headerContent = getHeaderContent();
+    var footerContent = getFooterContent();
+
+    // Set the header and footer content in the designated placeholders
+    document.getElementById('header').innerHTML = headerContent;
+    document.getElementById('footer').innerHTML = footerContent;
+  </script>
+</body>
+</html>

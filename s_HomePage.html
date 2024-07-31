@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html> 
+<head>
+	<!--
+		Author: Nathan Scott
+		Start Date: 4/8/2023
+		End Date: N/A
+
+	-->
+	<meta charset="utf-8" />
+	<title>ionLion Home</title>
+	<link href="css/s_Base.css" rel="stylesheet" />
+	<script src="headerFooter.js"></script>
+</head>
+
+<body onLoad="javascript:startFlow()">
+	<header id="header"></header>
+		<article>
+		<div class="mainIon">
+		<center id="ionAgeH"><b><cite>Welcome to the Ion Age</b></cite></center>
+		<div id="ionAge">
+			<div id="half" class="text">
+					<p>
+						<cite>At ionLion, we are using our innovative fluid ionization techniques 
+						to develop superior, efficient, eco-friendly, low-cost and low-maintenance 
+						products in a variety of applications. </br></br>
+
+						Our current thrust areas are ion wind loudspeaker, ionic space heating and 
+						cooling, and cold atmospheric pressure plasma jet. </br></br>Please click on the tiles 
+						below to learn more.</cite>
+					</p>
+			</div>
+			<div id="half" class="ions">
+				<center>
+					<img id="ion" src="00.png" alt= "Ion Flow" /><br>
+				</center>
+			</div>
+		</div>
+		</div>
+		<div class="prod">
+			<a href="s_IonWindSpeaker.html">
+				<div class="about" id="active">		
+					<img src="imgs/plasmaspkMusic.png" alt="art1" /><br/>
+					<label> <b>Ion Wind Speaker</b> </label><br/>
+				</div>
+			</a>
+			
+			<a href="s_SpaceHeaterCooler.html">
+				<div class="about" id="active">			
+					<img src="imgs/shac.jpg" alt="art2" /><br/>
+					<label> <b>Space Heating & Cooling</b> </label><br/>
+				</div>
+			</a>
+			
+			<a href="s_ColdPlasmaJet.html">
+				<div class="about" id="active">
+					<img src="imgs/cpj.jpg" alt="art3" /><br/>
+					<label> <b>Cold Plasma Jet</b> </label><br/>
+				</div>	
+			</a>
+		</div>
+	</article>
+	<footer id="footer"></footer>
+		<script>
+		//declare and fill array of ions man image filenames
+		//04.png & 17.png have white bars on the side
+		var ions = ["00.png", "01.png", "02.png", "03.png", "04.png",
+					"05.png", "06.png", "07.png", "08.png", "09.png", 
+					"10.png", "11.png", "12.png", "13.png", "14.png", 
+					"15.png", "16.png", "17.png", "18.png", "19.png", 
+					"20.png", "21.png", "22.png", "23.png", "24.png"]
+
+		var curIon = 0;
+
+		function flow () {
+			curIon = (curIon === 24) ? 0 : ++curIon;
+			var imgHolder = document.getElementById("ion");
+			imgHolder.src = ions[curIon] ;
+		}
+
+		function startFlow() {
+			setInterval (flow, 90);
+		}
+	</script>
+	
+	<!-- CREATED USING CHATGPT -->
+	<script>
+    // Retrieve the header and footer content from local storage
+    var headerContent = getHeaderContent();
+    var footerContent = getFooterContent();
+
+    // Set the header and footer content in the designated placeholders
+    document.getElementById('header').innerHTML = headerContent;
+    document.getElementById('footer').innerHTML = footerContent;
+  </script>
+</body>
+</html>
